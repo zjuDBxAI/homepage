@@ -4,7 +4,9 @@
     <Header />
 
     <!-- 路由视图 -->
-    <router-view />
+    <router-view v-slot="{ Component, route }">
+      <component :is="Component" :key="route.path" class="route-page" />
+    </router-view>
 
     <!-- Footer组件 -->
     <Footer />
@@ -25,6 +27,19 @@ export default {
 </script>
 
 <style>
+.route-page {
+  animation: page-arrive 300ms cubic-bezier(0.22, 0.68, 0.25, 1) both;
+}
+
+@keyframes page-arrive {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .route-page { animation: none; }
+}
+
 /* 全局样式已通过外部CSS加载 */
 :root {
   --zju-blue: #003f88;

@@ -5,11 +5,11 @@ import path from "node:path";
 import { fileURLToPath, URL } from "node:url";
 import { newsData } from "./src/data/newsData.js";
 
-function generateStaticNewsPages() {
+function generateStaticRoutePages() {
   let resolvedConfig;
 
   return {
-    name: "generate-static-news-pages",
+    name: "generate-static-route-pages",
     apply: "build",
     configResolved(config) {
       resolvedConfig = config;
@@ -19,9 +19,14 @@ function generateStaticNewsPages() {
       const indexHtmlPath = path.join(outDir, "index.html");
       const indexHtml = await fs.readFile(indexHtmlPath, "utf-8");
 
+      const staticRoutes = [
+        ...newsData.map(({ id }) => ["news", id]),
+        ["research", "medical-agents"],
+      ];
+
       await Promise.all(
-        newsData.map(async ({ id }) => {
-          const routeDir = path.join(outDir, "news", id);
+        staticRoutes.map(async (segments) => {
+          const routeDir = path.join(outDir, ...segments);
           await fs.mkdir(routeDir, { recursive: true });
           await fs.writeFile(path.join(routeDir, "index.html"), indexHtml);
         })
@@ -31,7 +36,7 @@ function generateStaticNewsPages() {
 }
 
 export default defineConfig({
-  plugins: [vue(), generateStaticNewsPages()],
+  plugins: [vue(), generateStaticRoutePages()],
   resolve: {
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url)),

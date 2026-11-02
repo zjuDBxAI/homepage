@@ -18,6 +18,20 @@
             : "This research direction focuses on building an agent ecosystem for real-world healthcare scenarios, exploring innovative applications of AI Agents in clinical diagnosis, biomedical research, and medical decision-making. We develop professional healthcare agents with capabilities in perception, reasoning, planning, tool invocation, collaborative decision-making, and continual learning, based on medical large language models, multimodal healthcare data, and medical knowledge. Our research emphasizes multi-agent collaboration, knowledge-driven reasoning, reinforcement learning optimization, and Agent Memory enhancement mechanisms to continuously improve agents' autonomous learning, dynamic decision-making, and collaborative execution in complex healthcare scenarios. Through real-world clinical validation, we aim to create a trustworthy, secure, and scalable healthcare agent platform that serves as the next-generation AI infrastructure for smart healthcare, advancing AI in medicine from \"single models\" to an \"agent ecosystem.\""
         }}
       </p>
+      <div class="research-direction-entry">
+        <router-link
+          to="/research/medical-agents"
+          class="research-direction-link"
+          :aria-label="
+            currentLang === 'zh'
+              ? '了解医疗与药学智能体研究方向'
+              : 'Learn more about AI agents for medicine and pharmacy'
+          "
+        >
+          <span>Learn More</span>
+          <span aria-hidden="true">→</span>
+        </router-link>
+      </div>
       <div
         class="research-card-grid"
         :class="`card-count-${healthcareProjects.length}`"
@@ -165,6 +179,51 @@ export default {
   text-align: left;
 }
 
+.research-direction-entry {
+  display: flex;
+  justify-content: center;
+  margin: -12px 0 42px;
+}
+
+.research-direction-link {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 18px;
+  min-height: 46px;
+  padding: 10px 26px;
+  border: 1px solid #003f88;
+  border-radius: 8px;
+  color: #003f88;
+  background: #fff;
+  font-size: 17px;
+  line-height: 24px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: background-color 0.2s ease, color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+}
+
+.research-direction-link:hover {
+  color: #fff !important;
+  background: #003f88;
+  text-decoration: none;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 14px rgba(0, 63, 136, 0.12);
+}
+
+.research-direction-link > span:last-child { transition: transform 0.2s ease; }
+.research-direction-link:hover > span:last-child { transform: translateX(4px); }
+.research-direction-link:active { transform: translateY(1px); box-shadow: none; }
+
+@media (prefers-reduced-motion: reduce) {
+  .research-direction-link, .research-direction-link > span { transition: none; transform: none; }
+}
+
+.research-direction-link:focus-visible {
+  outline: 3px solid #003f88;
+  outline-offset: 4px;
+}
+
 .research-card-grid {
   display: flex;
   flex-wrap: wrap;
@@ -238,6 +297,10 @@ export default {
 
 /* 移动端响应式样式 */
 @media (max-width: 768px) {
+  .research-direction-entry {
+    margin: 0 0 32px;
+  }
+
   .project-container {
     padding: 0 calc(60 / 750 * 100vw);
   }
