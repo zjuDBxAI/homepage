@@ -13,10 +13,12 @@ export function useLanguage() {
     if (savedLang && (savedLang === "zh" || savedLang === "en")) {
       currentLang.value = savedLang;
     }
+    document.documentElement.lang = currentLang.value === "zh" ? "zh-CN" : "en";
   };
 
   watch(currentLang, (newLang) => {
     localStorage.setItem("language", newLang);
+    document.documentElement.lang = newLang === "zh" ? "zh-CN" : "en";
   });
 
   return {
