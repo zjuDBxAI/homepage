@@ -1,11 +1,5 @@
 <template>
   <main class="medical-agents" id="medical-agents-top">
-    <nav class="research-breadcrumb research-container" :aria-label="t('当前位置', 'Breadcrumb')">
-      <router-link to="/">{{ t('首页', 'Home') }}</router-link><span aria-hidden="true">/</span>
-      <router-link :to="{ path: '/', hash: '#projects' }">{{ t('项目研究', 'Research') }}</router-link><span aria-hidden="true">/</span>
-      <span aria-current="page">{{ t('医疗与药学智能体', 'Medical & Pharmacy Agents') }}</span>
-    </nav>
-
     <section class="research-hero" aria-labelledby="research-title">
       <div class="research-container">
         <div class="hero-layout">
@@ -70,13 +64,6 @@
       </div>
     </section>
 
-    <section class="research-contact" aria-labelledby="research-contact-title">
-      <div class="research-container contact-layout">
-        <div><h2 id="research-contact-title">{{ t('学术交流与合作', 'Connect with our research group') }}</h2><p>{{ t('欢迎围绕相关研究开展学术交流与合作。', 'We welcome academic exchange and research collaborations.') }}</p></div>
-        <a class="research-email" href="mailto:xiezl@zju.edu.cn"><ResearchIcon name="mail" />xiezl@zju.edu.cn</a>
-      </div>
-    </section>
-    <div class="research-return research-container"><router-link :to="{ path: '/', hash: '#projects' }">← {{ t('返回实验室项目研究', 'Back to lab research') }}</router-link><a href="#medical-agents-top">{{ t('返回顶部', 'Back to top') }} ↑</a></div>
   </main>
 </template>
 
