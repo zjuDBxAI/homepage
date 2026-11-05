@@ -29,7 +29,7 @@
           <div class="memorial-portrait-wrap">
             <img
               class="memorial-portrait"
-              src="https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/ooibc.webp"
+              :src="assetUrl('/assets/img/people/ooibc.webp')"
               alt="黄铭钧院士 / Professor Ooi Beng Chin"
             />
           </div>
@@ -41,6 +41,7 @@
 
 <script>
 import { useLanguage } from "../composables/useLanguage";
+import { assetUrl } from "../utils/assetUrl.js";
 
 export default {
   name: "MemorialSection",
@@ -48,6 +49,7 @@ export default {
     const { currentLang } = useLanguage();
 
     return {
+      assetUrl,
       currentLang,
     };
   },

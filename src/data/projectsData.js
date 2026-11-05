@@ -1,10 +1,12 @@
-﻿// 医疗健康项目
+﻿import { assetUrl } from "../utils/assetUrl.js";
+
+// 医疗健康项目
 export const healthcareProjects = [
   {
     name: "HeartcareGPT",
     year: "2025 - ",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/projects/heartcaregpt.png",
+      assetUrl("/assets/img/projects/heartcaregpt.png"),
     link: "https://github.com/DCDmllm/Heartcare-Suite",
     descriptionZh:
       "HeartcareGPT是一个统一的医疗多模态大模型，能够完成原始信号与图像两种格式心电输入的理解与建模。HeartcareGPT使用专为这些格式设计的双通道编码器与投影器，并采用LoRA技术，实现了信号、图像与文本的跨模态语义对齐。该模型在特定领域的Heartcare-400K数据集上进行训练，在症状诊断、报告生成、信号预测等各类医学任务上具备优秀的表现。",
@@ -15,7 +17,7 @@ export const healthcareProjects = [
     name: "EyecareGPT",
     year: "2025 - ",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/projects/eyeexpert.jpg",
+      assetUrl("/assets/img/projects/eyeexpert.jpg"),
     link: "https://github.com/DCDmllm/EyecareGPT",
     descriptionZh:
       "EyeExpertGPT 是一个先进的视觉语言模型，专为智能眼科诊断量身定制。它凭借高质量的数据集 (Eyecare-100K)、全面的评估基准 (Eyecare-Bench) 以及针对细粒度病变识别优化的专用模型架构，解决了该领域的关键挑战。EyeExpertGPT 为眼科视觉理解树立了全新标准。",
@@ -26,7 +28,7 @@ export const healthcareProjects = [
     name: "HealthGPT",
     year: "2024 - ",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/projects/healthgpt.jpg",
+      assetUrl("/assets/img/projects/healthgpt.jpg"),
     link: "https://github.com/DCDmllm/HealthGPT",
     descriptionZh:
       "HealthGPT 是一个大型视觉语言模型，旨在实现全面的医学图像理解和报告生成。HealthGPT 基于统一的自回归框架，采用新颖的异构低秩自适应 (H-LoRA) 技术整合视觉和文本知识。该模型在特定领域的 VL-Health 数据集上进行训练，在广泛的医学理解和生成任务中展现出卓越的性能。",
@@ -37,7 +39,7 @@ export const healthcareProjects = [
     name: "Cohort Study",
     year: "2016 - ",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/projects/cohort.png",
+      assetUrl("/assets/img/projects/cohort.png"),
     link: "https://www.comp.nus.edu.sg/~dbsystem/cohort/",
     descriptionZh:
       "队列研究（Cohort）是一种典型的面板研究方法，用于调查具有共同特征的个体群体，在因果关系分析中具有强大的识别关键因素的能力。我们正在开展一系列基于人工智能与数据库技术的队列研究，旨在高效、有效地发现多样化的队列群体，分析可解释的队列模式，并将重要的队列研究结果应用于时间序列数据的分析中。队列研究可广泛应用于医疗健康、欺诈检测、金融分析等多个领域。更多基于人工智能的队列研究工作也将陆续推出。",
@@ -52,7 +54,7 @@ export const aiSystemProjects = [
     name: "HAKES",
     year: "2024 - ",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/projects/hakes.png",
+      assetUrl("/assets/img/projects/hakes.png"),
     link: "https://www.comp.nus.edu.sg/~dbsystem/hakes/",
     descriptionZh:
       "HAKES 是一个可扩展、模块化的向量数据库，专为语义搜索优化，由三层组成：嵌入生成、向量检索和数据存储。它在资源利用与可扩展性方面表现优异，在并发负载下的性能比现有系统高出 10 倍，且几乎能实现 100% 的准确率。其模块化设计支持灵活定制，同时通过加密机制保障数据管理的安全性。",
@@ -63,7 +65,7 @@ export const aiSystemProjects = [
     name: "SINGA",
     year: "2014 - ",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/projects/singa.jpg",
+      assetUrl("/assets/img/projects/singa.jpg"),
     link: "https://singa.apache.org/",
     descriptionZh:
       "一个分布式深度学习平台（间接由ASTAR、MOE和NRF CRP资助）。Apache SINGA 是一个 Apache 顶级项目，开源的深度学习和机器学习模型分布式训练平台，设计理念基于四个原则：易用性、可扩展性、可扩展性和弹性。Apache SINGA v2.0.0 版本具有 AutoML 特性，并提供一个医疗健康模型库，其中包含已用于医疗健康研究的深度学习模型，并支持将其他模型移植到 SINGA 上。SINGA-lite、SINGA-easy 和 SINGA-db 是即将发布的版本。",

@@ -3,9 +3,7 @@
     <div class="sigma_banner-slider">
       <div
         class="light-bg sigma_banner-slider-inner bg-cover bg-center bg-norepeat dark-overlay"
-        style="
-          background-image: url(https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/home-banner.png);
-        "
+        :style="{ backgroundImage: `url(${assetUrl('/assets/img/home-banner.png')})` }"
       >
         <div class="sigma_banner-text">
           <div class="container">
@@ -46,6 +44,7 @@
 
 <script>
 import { useLanguage } from "../composables/useLanguage";
+import { assetUrl } from "../utils/assetUrl.js";
 
 export default {
   name: "BannerSection",
@@ -53,6 +52,7 @@ export default {
     const { currentLang } = useLanguage();
 
     return {
+      assetUrl,
       currentLang,
     };
   },

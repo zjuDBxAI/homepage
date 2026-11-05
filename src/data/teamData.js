@@ -1,4 +1,6 @@
-﻿// Faculty 教师
+﻿import { assetUrl } from "../utils/assetUrl.js";
+
+// Faculty 教师
 export const facultyData = [
   {
     name: "张文桥",
@@ -13,7 +15,7 @@ export const facultyData = [
     email: "wenqiaozhang@zju.edu.cn",
     website: "https://person.zju.edu.cn/wenqiao",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/zhangwenqiao.jpg",
+      assetUrl("/assets/img/people/zhangwenqiao.jpg"),
   },
   {
     name: "鲁鹏",
@@ -28,7 +30,7 @@ export const facultyData = [
     email: "peng.lu@zju.edu.cn",
     website: "https://person.zju.edu.cn/lupeng",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/lupeng.jpg",
+      assetUrl("/assets/img/people/lupeng.jpg"),
   },
   {
     name: "谢钟乐",
@@ -43,7 +45,7 @@ export const facultyData = [
     email: "xiezl@zju.edu.cn",
     website: "https://xiezl.github.io/",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/xiezhongle.jpg",
+      assetUrl("/assets/img/people/xiezhongle.jpg"),
   }
 ];
 
@@ -61,7 +63,7 @@ export const assistantData = [
     email: "",
     website: "",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/tangyanjun.jpg",
+      assetUrl("/assets/img/people/tangyanjun.jpg"),
   },
   {
     name: "应洪彬",
@@ -72,7 +74,7 @@ export const assistantData = [
     description_en: "Responsible for the implementation and delivery of laboratory engineering projects, as well as the development and management of laboratory infrastructure.",
     email: "",
     website: "",
-    image: "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/yinghongbin.jpg"
+    image: assetUrl("/assets/img/people/yinghongbin.jpg")
   }
 ];
 
@@ -90,7 +92,7 @@ export const studentsData = [
     email: "",
     website: "https://github.com/gdace829",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/shuyisong.png",
+      assetUrl("/assets/img/people/shuyisong.png"),
   },
   {
     name: "黄紫潍",
@@ -104,7 +106,7 @@ export const studentsData = [
     email: "",
     website: "https://scholar.google.com/citations?user=thIPUrcAAAAJ&hl",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/huangziwei.jpg",
+      assetUrl("/assets/img/people/huangziwei.jpg"),
   },
   {
     name: "陈蔚竹",
@@ -113,7 +115,7 @@ export const studentsData = [
     position_en: "Ph.D. Student",
     description: "本科毕业于华东师范大学数据科学与工程学院，浙江大学软件学院博士研究生在读。",
     description_en: "I completed my undergraduate studies at the School of Data Science and Engineering, East China Normal University, and I am currently a Ph.D. student at the School of Software Technology, Zhejiang University.",
-    image: "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/chenweizhu.jpg",
+    image: assetUrl("/assets/img/people/chenweizhu.jpg"),
   },
   {
     name: "李坤熹",
@@ -123,7 +125,7 @@ export const studentsData = [
     description: "浙江大学计算机科学与技术学院2026级博士生，硕士就读于浙江大学软件学院。曾在阿里巴巴淘天集团实习，参与多模态大模型KV Cache优化策略研究，在AAAI、ACL等会议发表论文。目前主要研究方向为Agent与大模型高效训练/推理。",
     description_en: "I am a Ph.D. student who began doctoral studies in 2026 at the College of Computer Science and Technology, Zhejiang University, after completing my master’s studies at Zhejiang University’s School of Software Technology. I previously interned at Alibaba’s Taobao and Tmall Group, where I worked on KV cache optimization for multimodal large language models. I have published papers at conferences including AAAI and ACL. My current research focuses on AI agents and efficient training and inference for large language models.",
     website: "https://scholar.google.com/citations?user=ws7ZrM8AAAAJ&hl=zh-CN&authuser=1",
-    image: "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/likunxi.jpg",
+    image: assetUrl("/assets/img/people/likunxi.jpg"),
   },
   {
     name: "牛恩培",
@@ -134,7 +136,7 @@ export const studentsData = [
     description_en: "I completed my undergraduate studies at the School of Software Engineering, Nankai University, and I am currently a Ph.D. student at the School of Software Technology, Zhejiang University. My research focuses on the intersection of large language models and data management.",
     email: "",
     website: "",
-    image: "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/niuenpei.jpeg",
+    image: assetUrl("/assets/img/people/niuenpei.jpeg"),
   },
   {
     name: "刘可涵",
@@ -148,7 +150,7 @@ export const studentsData = [
     email: "",
     website: "",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/liukehan.jpg",
+      assetUrl("/assets/img/people/liukehan.jpg"),
   },
   {
     name: "吴晨阳",
@@ -162,7 +164,7 @@ export const studentsData = [
     email: "",
     website: "",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/wuchenyang.jpg",
+      assetUrl("/assets/img/people/wuchenyang.jpg"),
   },
   {
     name: "范振璇",
@@ -176,7 +178,7 @@ export const studentsData = [
     email: "",
     website: "https://fanzhenxuan.github.io/",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/fanzhenxuan.jpg",
+      assetUrl("/assets/img/people/fanzhenxuan.jpg"),
   },
   {
     name: "严文杰",
@@ -190,7 +192,7 @@ export const studentsData = [
     email: "",
     website: "",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/yanwenjie.jpg",
+      assetUrl("/assets/img/people/yanwenjie.jpg"),
   },
   {
     name: "林格西",
@@ -204,7 +206,7 @@ export const studentsData = [
     email: "",
     website: "",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/lingexi.jpg",
+      assetUrl("/assets/img/people/lingexi.jpg"),
   },
   {
     name: "范倬宁",
@@ -215,7 +217,7 @@ export const studentsData = [
     description_en: "I received my B.S. in Mathematics and Applied Mathematics from Nankai University, where I studied probability and statistics. I am currently pursuing my M.S. at Zhejiang University. My research interests lie in agent memory, long-horizon reasoning, and efficient agent systems.",
     website: "https://github.com/zoeplus",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/fanzhuoning.jpg",
+      assetUrl("/assets/img/people/fanzhuoning.jpg"),
   },
   {
     name: "刘汉铖",
@@ -225,7 +227,7 @@ export const studentsData = [
     description: "本科毕业于北京航空航天大学软件学院，浙江大学计算机学院硕士研究生在读。研究兴趣主要集中于大语言模型的高效训练与推理优化，关注长上下文场景下大模型的计算与存储效率问题。",
     description_en: "I completed my undergraduate studies at the School of Software, Beihang University, and am currently pursuing a master's degree at the College of Computer Science and Technology, Zhejiang University. My research interests include efficient training and inference of large language models, with a focus on computational and memory efficiency in long-context scenarios.",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/liuhancheng.jpg",
+      assetUrl("/assets/img/people/liuhancheng.jpg"),
   },
   {
     name: "李嘉宁",
@@ -236,7 +238,7 @@ export const studentsData = [
     description_en: "I graduated from South China University of Technology with a bachelor's degree in Software Engineering, and I am currently a master's student in Artificial Intelligence at Zhejiang University. My research mainly focuses on medical large language models and multi-agent systems for drug toxicity reasoning. My current research interest centers on how to combine large language models with multi-agent collaboration frameworks to improve the automation and interpretability of drug safety assessment.",
     website: "https://github.com/jinyu2003",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/lijianing.jpg",
+      assetUrl("/assets/img/people/lijianing.jpg"),
   },
   {
     name: "邵鹏程",
@@ -245,7 +247,7 @@ export const studentsData = [
     position_en: "Master Student",
     description: "本科毕业于浙江工商大学计算机科学与技术专业，浙江大学软件学院硕士研究生在读。主要研究方向为大模型应用与智能体系统，关注大语言模型驱动的多智能体协作、任务规划与智能决策，探索大模型技术在智能制造、企业自动化等场景中的应用。",
     description_en: "I graduated from Zhejiang Gongshang University with a bachelor's degree in Computer Science and Technology and am currently pursuing a master's degree at Zhejiang University. My research interests focus on large language model applications and intelligent agent systems, especially multi-agent collaboration and intelligent decision-making in scenarios such as intelligent manufacturing and enterprise automation. ",
-    image: "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/shaopengcheng.png",
+    image: assetUrl("/assets/img/people/shaopengcheng.png"),
   },
   {
     name: "叶诚豪",
@@ -254,7 +256,7 @@ export const studentsData = [
     position_en: "Master Student",
     description: "本科毕业于北京科技大学计算机科学与技术专业，爱好户外运动.",
     description_en: "I completed my undergraduate studies at the University of Science and Technology Beijing, majoring in Computer Science and Technology. I enjoy outdoor activities.",
-    image: "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/yechenhao.jpg",
+    image: assetUrl("/assets/img/people/yechenhao.jpg"),
   },
   {
     name: "刘格显",
@@ -265,7 +267,7 @@ export const studentsData = [
     description_en: "I received my B.E. in Software Engineering from Northeastern University and am currently a master’s student at the School of Software Technology, Zhejiang University. I previously interned at PingCAP, maintaining the TiDB query optimizer. My interests include database–AI integration, agentic databases, and data agents.",
     email: "",
     website: "https://github.com/ghoshh",
-    image: "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/liugexian.jpeg",
+    image: assetUrl("/assets/img/people/liugexian.jpeg"),
   },
   {
     name: "郑俊洋",
@@ -276,7 +278,7 @@ export const studentsData = [
     description_en: "I received my B.E. in Data Science and Big Data from Henan University of Technology and am currently a master’s student at the School of Software Technology, Zhejiang University. My current research interests focus on accelerating large model inference.",
     email: "",
     website: "",
-    image: "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/zhengjunyang.png",
+    image: assetUrl("/assets/img/people/zhengjunyang.png"),
   },
   {
     name: "罗子熠",
@@ -287,7 +289,7 @@ export const studentsData = [
     description_en: "I completed my undergraduate studies in Mathematics and Applied Mathematics at Nanjing University of Technology and am currently a master student at the School of Software Technology, Zhejiang University. My research interests focus on database systems and AI systems, with an emphasis on Agent Infra, AI Infra, and distributed systems.",
     email: "",
     website: "",
-    image: "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/luoziyi.jpeg",
+    image: assetUrl("/assets/img/people/luoziyi.jpeg"),
   },
   {
     name: "王鹏程",
@@ -298,7 +300,7 @@ export const studentsData = [
     description_en: "I completed my undergraduate studies at the School of Computer Science, Zhejiang University, and am currently a master student at the School of Software Technology, Zhejiang University. My current research interests focus on database intelligent agents.",
     email: "",
     website: "",
-    image: "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/wangpengcheng.png",
+    image: assetUrl("/assets/img/people/wangpengcheng.png"),
   },
   {
     name: "魏德第",
@@ -309,7 +311,7 @@ export const studentsData = [
     description_en: "I completed my undergraduate studies in Information Security at Zhongnan University of Economics and Law and am currently a master student at the School of Software Technology, Zhejiang University. My current research interests focus on accelerating large model inference.",
     email: "",
     website: "",
-    image: "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/weidedi.jpeg",
+    image: assetUrl("/assets/img/people/weidedi.jpeg"),
   },
   {
     name: "喻俊",
@@ -320,7 +322,7 @@ export const studentsData = [
     description_en: "I graduated from Beijing Institute of Technology with a bachelor's degree in Software Engineering, and I am currently a master's student at the School of Software Technology, Zhejiang University. My main research interests include inference acceleration for multimodal large models and KV Cache optimization strategies.",
     email: "",
     website: "",
-    image: "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/yujun.jpeg",
+    image: assetUrl("/assets/img/people/yujun.jpeg"),
   },
   {
     name: "秦镇楠",
@@ -331,7 +333,7 @@ export const studentsData = [
     description_en: "I graduated with a Bachelor's degree in Mechanical Engineering from Nanjing Tech University and am currently pursuing my Master's degree at the School of Software Technology, Zhejiang University. My primary research interests focus on multi-agent collaboration and virtual communities.",
     email: "",
     website: "",
-    image: "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/qinzhennan.jpeg",
+    image: assetUrl("/assets/img/people/qinzhennan.jpeg"),
   },
   {
     name: "石雨承",
@@ -342,7 +344,7 @@ export const studentsData = [
     description_en: "I graduated from the School of Artificial Intelligence at Jilin University and is currently pursuing a master’s degree at the School of Software Technology, Zhejiang University. The current research focus is large language model-driven intelligent agents for anesthesia decision-making.",
     email: "",
     website: "",
-    image: "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/shiyucheng.png",
+    image: assetUrl("/assets/img/people/shiyucheng.png"),
   },
   {
     name: "梁鸿宇",
@@ -353,7 +355,7 @@ export const studentsData = [
     description_en: "I graduated from Jiangnan University with a degree in Internet of Things Engineering and am currently pursuing a master's degree at the School of Software Technology, Zhejiang University. My current research focuses on the evaluation and benchmarking of intelligent agents for database systems.",
     email: "",
     website: "",
-    image: "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/lianghongyu.jpeg",
+    image: assetUrl("/assets/img/people/lianghongyu.jpeg"),
   }
 ];
 
@@ -371,7 +373,7 @@ export const internData = [
     email: "",
     website: "",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/wangrenxuan.jpg",
+      assetUrl("/assets/img/people/wangrenxuan.jpg"),
   },
   {
     name: "嵇哲",
@@ -385,7 +387,7 @@ export const internData = [
     email: "",
     website: "",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/jizhe.jpg",
+      assetUrl("/assets/img/people/jizhe.jpg"),
   },
   {
     name: "陈俊屹",
@@ -399,6 +401,6 @@ export const internData = [
     email: "",
     website: "",
     image:
-      "https://dataxai.oss-cn-hangzhou.aliyuncs.com/assets/img/people/chenjunyi.jpeg"
+      assetUrl("/assets/img/people/chenjunyi.jpeg")
   }
 ];
