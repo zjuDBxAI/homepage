@@ -52,18 +52,18 @@ export const facultyData = [
 // Assistant Staff 助理老师
 export const assistantData = [
   {
-    name: "唐燕君",
-    name_en: "Tang Yanjun",
-    position: "财务助理",
-    position_en: "Finance Assistant",
+    name: "孙凯文",
+    name_en: "Sun Kaiwen",
+    position: "科研助理",
+    position_en: "Research Assistant",
     description:
-      "协助预算编制、报销审核、决算等流程工作，确保科研经费合规高效使用。",
+      "负责科研项目经费管理，协助预算编制、经费执行跟踪、报销审核、项目决算等全流程工作；配合完成科研项目资料归档、数据统计、报表报送，支撑项目日常管理，保障科研经费规范、安全、高效使用，助力科研工作有序开展。",
     description_en:
-      "Assist in budget preparation, reimbursement review, final accounts, and other processes to ensure compliant and efficient use of research funds.",
+      "Responsible for the management of research project funds, assisting in budget preparation, tracking fund execution, reviewing reimbursements, and handling project final accounts throughout the entire process; coordinating the archiving of research project materials, data statistics, and report submissions, supporting daily project management, ensuring the compliant, safe, and efficient use of research funds, and facilitating the orderly conduct of research work.",
     email: "",
     website: "",
     image:
-      assetUrl("/assets/img/people/tangyanjun.jpg"),
+      assetUrl("/assets/img/people/sunkaiwen.jpg"),
   },
   {
     name: "应洪彬",
